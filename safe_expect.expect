@@ -1,0 +1,6 @@
+#!/usr/bin/expect
+
+set addr = [lindex $argv 0]
+
+spawn telnet $addr
+killall telnetd.exe telnet.exe
